@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "ddn430", "ddn430\ddn430.esproj", "{2374F8A8-425D-4AD5-863B-38FBE6A88389}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ddn430API", "ddn430API\ddn430API.csproj", "{A47649F5-484C-432C-B07A-DFA7803DD69E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2374F8A8-425D-4AD5-863B-38FBE6A88389}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2374F8A8-425D-4AD5-863B-38FBE6A88389}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2374F8A8-425D-4AD5-863B-38FBE6A88389}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{2374F8A8-425D-4AD5-863B-38FBE6A88389}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2374F8A8-425D-4AD5-863B-38FBE6A88389}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2374F8A8-425D-4AD5-863B-38FBE6A88389}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{A47649F5-484C-432C-B07A-DFA7803DD69E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A47649F5-484C-432C-B07A-DFA7803DD69E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A47649F5-484C-432C-B07A-DFA7803DD69E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A47649F5-484C-432C-B07A-DFA7803DD69E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6C9899BA-A639-4D3E-9612-8BF9C77A5D23}
+	EndGlobalSection
+EndGlobal
