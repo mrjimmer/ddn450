@@ -16,6 +16,8 @@ export class AppComponent {
   }
   displayedColumns: string[] = ['date', 'temperaturec', 'temperaturef', 'summary'];
   title = 'ddn430';
+  dateNow: Date = new Date();
+  
   
 }
 
@@ -25,4 +27,5 @@ interface WeatherForecast {
   temperatureF: number;
   summary: string;
 }
+
 

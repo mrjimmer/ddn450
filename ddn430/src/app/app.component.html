@@ -6,7 +6,12 @@
 
 <h1 id="tableLabel">DDN-430 - Topic 3 - Part 1</h1>
 
-<p>Hello World!.</p>
+<div style="background-color:#33475b" >
+  <p>Hello World! with backgroud color div</p>
+  <p *ngIf="dateNow.getHours() > 12">Good Afternooon w/ logic</p>
+  <p *ngIf="dateNow.getHours() < 12">Good Morning w/ logic</p>
+</div>
+
 
 <mat-tab-group>
   <mat-tab label="First"> <img src="../assets/img/one.jpg" alt="one" /> </mat-tab>
