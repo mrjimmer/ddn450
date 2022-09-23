@@ -12,8 +12,12 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTableModule } from '@angular/material/table';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatListModule } from '@angular/material/list';
+import { MatFormFieldModule } from '@angular/material/form-field';
+
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
 import { WeekThreeComponent } from './components/week-three/week-three.component';
+
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -37,6 +41,8 @@ import { WeekThreeComponent } from './components/week-three/week-three.component
     MatTabsModule,
     MatListModule,
     MatSidenavModule,
+    MatFormFieldModule,
+    NgbModule,
     RouterModule.forRoot([{
       path: 'contact-form', component: ContactFormComponent
     }])
