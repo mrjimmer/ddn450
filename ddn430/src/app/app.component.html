@@ -1,67 +1,15 @@
 <p>
   <mat-toolbar>
-    <span>My Header</span>
+    
   </mat-toolbar>
 </p>
 
-<h1 id="tableLabel">DDN-430 - Topic 3 - Part 1</h1>
-
-<div style="background-color:#33475b" >
-  <p>Hello World! with backgroud color div</p>
-  <p *ngIf="dateNow.getHours() > 12">Good Afternooon w/ logic</p>
-  <p *ngIf="dateNow.getHours() < 12">Good Morning w/ logic</p>
-</div>
-
 
 <mat-tab-group>
-  <mat-tab label="First"> <img src="../assets/img/one.jpg" alt="one" /> </mat-tab>
-  <mat-tab label="Second"> <img src="../assets/img/two.jpg" alt="one" /> </mat-tab>
-  <mat-tab label="Third"> <img src="../assets/img/three.jpg" alt="one" /> </mat-tab>
+  <mat-tab label="Week 3"> <app-week-three></app-week-three> </mat-tab>
+  <mat-tab label="Week 4"><app-contact-form></app-contact-form> </mat-tab>
+  <mat-tab label="Week 5"> <img src="../assets/img/three.jpg" alt="one" /> </mat-tab>
 </mat-tab-group>
-
-<p>HTML List</p>
-
-<mat-list role="list">
-  <mat-list-item role="listitem">Item 1</mat-list-item>
-  <mat-list-item role="listitem">Item 2</mat-list-item>
-  <mat-list-item role="listitem">Item 3</mat-list-item>
-</mat-list>
-
-
-<p *ngIf="!forecasts"><em>Loading... Please refresh once the ASP.NET backend has started. See <a href="https://aka.ms/jspsintegrationangular">https://aka.ms/jspsintegrationangular</a> for more details.</em></p>
-
-<table mat-table *ngIf="forecasts" [dataSource]="forecasts" class="mat-elevation-z8">
-
-  <!--- Note that these columns can be defined in any order.
-        The actual rendered columns are set as a property on the row definition" -->
-  <!-- Position Column -->
-  <ng-container matColumnDef="date">
-    <th mat-header-cell *matHeaderCellDef> Date </th>
-    <td mat-cell *matCellDef="let forecast"> {{forecast.date}} </td>
-  </ng-container>
-
-  <!-- Name Column -->
-  <ng-container matColumnDef="temperaturec">
-    <th mat-header-cell *matHeaderCellDef> Temp. (C) </th>
-    <td mat-cell *matCellDef="let forecast"> {{forecast.temperatureC}} </td>
-  </ng-container>
-
-  <!-- Weight Column -->
-  <ng-container matColumnDef="temperaturef">
-    <th mat-header-cell *matHeaderCellDef> Temp. (F) </th>
-    <td mat-cell *matCellDef="let forecast"> {{forecast.temperatureF}} </td>
-  </ng-container>
-
-  <!-- Symbol Column -->
-  <ng-container matColumnDef="summary">
-    <th mat-header-cell *matHeaderCellDef> Summary </th>
-    <td mat-cell *matCellDef="let forecast"> {{forecast.summary}} </td>
-  </ng-container>
-
-  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-</table>
-
 
 <p class="footer">
   <mat-toolbar>

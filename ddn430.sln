@@ -5,7 +5,11 @@ VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "ddn430", "ddn430\ddn430.esproj", "{2374F8A8-425D-4AD5-863B-38FBE6A88389}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ddn430API", "ddn430API\ddn430API.csproj", "{A47649F5-484C-432C-B07A-DFA7803DD69E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ddn430API", "ddn430API\ddn430API.csproj", "{A47649F5-484C-432C-B07A-DFA7803DD69E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ddn430SQL", "ddn430SQL\ddn430SQL.csproj", "{C2304D12-CE13-454A-9323-0FBB739C350F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{28E1C887-E8A9-46BB-A73D-ECDF14475BC5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +27,14 @@ Global
 		{A47649F5-484C-432C-B07A-DFA7803DD69E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A47649F5-484C-432C-B07A-DFA7803DD69E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A47649F5-484C-432C-B07A-DFA7803DD69E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2304D12-CE13-454A-9323-0FBB739C350F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2304D12-CE13-454A-9323-0FBB739C350F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2304D12-CE13-454A-9323-0FBB739C350F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2304D12-CE13-454A-9323-0FBB739C350F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28E1C887-E8A9-46BB-A73D-ECDF14475BC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28E1C887-E8A9-46BB-A73D-ECDF14475BC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28E1C887-E8A9-46BB-A73D-ECDF14475BC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28E1C887-E8A9-46BB-A73D-ECDF14475BC5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
