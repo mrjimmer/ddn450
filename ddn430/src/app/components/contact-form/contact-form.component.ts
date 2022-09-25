@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 
 import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
+import { UserService } from '../../services/user.service'
+import { UserInformation } from '../../models/user'
+import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 
 
 @Component({
@@ -9,8 +12,15 @@ import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 })
 export class ContactFormComponent {
   closeResult = '';
+  userFormGroup: FormGroup;
+  userInformation: UserInformation | undefined;
 
-  constructor(private modalService: NgbModal) { }
+  constructor(private fb: FormBuilder, private modalService: NgbModal, private userService: UserService) {
+    this.userFormGroup = this.fb.group({
+      name: new FormControl(''),
+      email: new FormControl('')
+    });
+  }
 
   open(content: any) {
     this.modalService.open(content, { ariaLabelledBy: 'modal-basic-title' }).result.then((result) => {
@@ -19,6 +29,13 @@ export class ContactFormComponent {
       this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
     });
   }
+ 
+  addUser() {
+    this.userInformation = <UserInformation>this.userFormGroup.value;
+    this.userService.postUserInfo(this.userInformation);
+
+  }
+
 
   private getDismissReason(reason: any): string {
     if (reason === ModalDismissReasons.ESC) {

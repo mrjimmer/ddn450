@@ -18,7 +18,7 @@ import { ContactFormComponent } from './components/contact-form/contact-form.com
 import { WeekThreeComponent } from './components/week-three/week-three.component';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -43,6 +43,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     MatSidenavModule,
     MatFormFieldModule,
     NgbModule,
+    FormsModule, ReactiveFormsModule,
     RouterModule.forRoot([{
       path: 'contact-form', component: ContactFormComponent
     }])
