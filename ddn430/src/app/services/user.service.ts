@@ -14,10 +14,12 @@ export class UserService {
 
   private userUrl = '/api/user';
 
-  postUserInfo(userInfo: UserInformation) : Observable<UserInformation>{
+  postUserInfo(userInfo: UserInformation){
 
-    return this.http.post<UserInformation>(this.userUrl, userInfo);
-    
+    this.http.post<string>('/api/user', userInfo).subscribe(result => {
+      this.userUrl = result;
+    }, error => console.error(error));
+    return;
   }
 
 }
