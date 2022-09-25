@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Common.Model
 {
-    internal class User
+    public class UserInformation
     {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Email { get; set; }
     }
 }
