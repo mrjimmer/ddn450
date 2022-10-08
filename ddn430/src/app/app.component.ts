@@ -17,6 +17,11 @@ export class AppComponent {
   displayedColumns: string[] = ['date', 'temperaturec', 'temperaturef', 'summary'];
   title = 'ddn430';
   dateNow: Date = new Date();
+
+  functionThree() {
+    console.log("Function Three Acitvated")
+
+  }
   
   
 }

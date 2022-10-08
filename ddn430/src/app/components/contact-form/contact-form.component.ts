@@ -29,7 +29,8 @@ export class ContactFormComponent {
       this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
     });
   }
- 
+
+ //function 2 - Add user
   addUser() {
     this.userInformation = <UserInformation>this.userFormGroup.value;
     this.userService.postUserInfo(this.userInformation);
@@ -43,7 +44,7 @@ export class ContactFormComponent {
     } else if (reason === ModalDismissReasons.BACKDROP_CLICK) {
       return 'by clicking on a backdrop';
     } else {
-      return `with: ${reason}`;
+      return `Function one, exiting modal with reaon: ${reason}`;
     }
   }
 }
