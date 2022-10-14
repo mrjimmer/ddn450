@@ -12,6 +12,7 @@ import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 })
 export class ContactFormComponent {
   closeResult = '';
+  userName = '';
   userFormGroup: FormGroup;
   userInformation: UserInformation | undefined;
 
@@ -33,7 +34,13 @@ export class ContactFormComponent {
  //function 2 - Add user
   addUser() {
     this.userInformation = <UserInformation>this.userFormGroup.value;
-    this.userService.postUserInfo(this.userInformation);
+    if (this.userInformation.name == "" || this.userInformation.email == "") {
+      alert("All form values must be filled out");
+    }
+    else {
+      this.userName = this.userInformation.name;
+      this.userService.postUserInfo(this.userInformation);
+    }
 
   }
 

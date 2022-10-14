@@ -5,14 +5,27 @@
   </div>
   <div class="modal-body">
     <form [formGroup]="userFormGroup" (ngSubmit)="addUser()">
-      <input type="text" formControlName="name">
-      <input type="text" formControlName="email">
+      <input type="text"  formControlName="name" required/>
+      <input type="text" formControlName="email" required/>
 
-      <input type="submit" value="Submit">
-    </form>
+      <button type="submit">Submit</button>
+</form>
   </div>
   <div class="modal-footer">
-    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Save</button>
+    <button type="button" class="btn btn-outline-dark" (click)="open(reply)">Save</button>
+  </div>
+</ng-template>
+
+<ng-template #reply let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Response</h4>
+    <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+  </div>
+  <div class="modal-body">
+    <p>Hello, {{userName}}! you submitted your form</p>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Exit</button>
   </div>
 </ng-template>
 
