@@ -12,6 +12,10 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext <UserContext> (option =>
     option.UseSqlServer(builder.Configuration.GetConnectionString("DdnDatabase")));
+builder.Services.AddDbContext<SearchContext>(option =>
+    option.UseSqlServer(builder.Configuration.GetConnectionString("DdnDatabase")));
+builder.Services.AddDbContext<ContactContext>(option =>
+    option.UseSqlServer(builder.Configuration.GetConnectionString("DdnDatabase")));
 
 var app = builder.Build();
 
