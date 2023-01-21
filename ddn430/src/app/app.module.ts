@@ -19,6 +19,7 @@ import { WeekThreeComponent } from './components/week-three/week-three.component
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ToastComponentComponent } from './components/toast-component/toast-component.component';
 
 
 
@@ -30,6 +31,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AppComponent,
     ContactFormComponent,
     WeekThreeComponent,
+    ToastComponentComponent,
     
   ],
   imports: [
